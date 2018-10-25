@@ -1,0 +1,30 @@
+.itemDetail {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  position: relative;
+}
+
+.itemImg {
+  padding-left: 0;
+  width: 55px;
+  height: 100%;
+  text-align: left;
+}
+
+.itemDescription {
+  flex-wrap: wrap;
+  margin-right: 15px;
+  padding-left: 40px;
+  text-align: left;
+  font-size: 0.8rem;
+  vertical-align: top;
+  padding-top: 0;
+}
+
+.itemName,
+.itemPrice,
+.itemColor {
+  padding: 3px 0;
+  display: inline-block;
+}

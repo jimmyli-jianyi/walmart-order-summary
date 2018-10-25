@@ -35,3 +35,22 @@
 .pickup-tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+#summary {
+  width: 12em;
+  border-radius: 10px;
+  box-shadow: 15px #aaaaaa;
+  border: 1px solid #bfbfbf;
+  padding: 10px;
+  margin: auto;
+}
+
+hr {
+  width: 90%;
+  border-color: rgb(243, 238, 238);
+}
+
+button {
+  border: none;
+  margin: 10px 0;
+}
