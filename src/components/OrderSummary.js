@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './OrderSummary.css';
+import './stylesheets/OrderSummary.css';
 import DetailExpander from './DetailExpander';
 import PromotionExpander from './PromotionExpander';
 
@@ -38,51 +38,64 @@ class OrderSummary extends Component {
         <div id="order-summary">
           <div id="subtotal">
             <span className="text-right">
-              <span className="text-right">Subtotal </span>
-              <span className="text-right">
-                {`(${items.length} item(s)): `}
+              <span className="text-right summary-text">Subtotal </span>
+              <span className="text-right summary-text">
+                ({<span className="super-bold">{items.length}</span>} items(s)):{' '}
               </span>
             </span>
-            <span className="text-left">{subtotal}</span>
+            <span className="text-left">
+              <span className="super-bold">${subtotal.toFixed(2)}</span>
+            </span>
           </div>
           <div>
-            <span>Discount saves you: {saving}</span>
+            <span className="summary-text">Discount saves you: </span>
+            <span className="super-bold">${saving.toFixed(2)}</span>
           </div>
           <div>
             <span>
               {pickUp ? (
                 <div className="pickup-tooltip">
-                  <u>Pickup savings:</u>
+                  <span className="summary-text">
+                    <u>Pickup savings:</u>
+                  </span>
                   <span className="tooltiptext">
                     Picking up order in the store helps cut costs, and we pass
                     the savings onto you.
                   </span>
                 </div>
               ) : (
-                <span>Shipping: </span>
+                <span className="summary-text">Shipping: </span>
               )}{' '}
             </span>
-            <span>{pickUp ? `-$${shippingFee} ` : `$${shippingFee}`}</span>
+            <span className="super-bold">
+              {pickUp ? (
+                <span id="saving">
+                  -$
+                  {shippingFee}
+                </span>
+              ) : (
+                `$${shippingFee}`
+              )}
+            </span>
           </div>
           <div>
-            <span>Est. taxes & fees: </span>
-            <span>{(tax * subtotal).toFixed(2)}</span>
+            <span className="summary-text">Est. taxes & fees: </span>
+            <span className="super-bold">${(tax * subtotal).toFixed(2)}</span>
             <div>
-              <span>
+              <span className="summary-text">
                 (Base on <u>{zipcode}</u>)
               </span>
             </div>
           </div>
           <hr />
           <div>
-            <span>Est. total: </span>
-            <span>
+            <span className="super-bold">Est. total: </span>
+            <span className="super-bold">
               {pickUp
                 ? (subtotal * (1 + tax)).toFixed(2)
                 : (subtotal * (1 + tax) + shippingFee).toFixed(2)}
             </span>
           </div>
-          <hr />
         </div>
         <div>
           <button
@@ -103,7 +116,9 @@ class OrderSummary extends Component {
             </span>
           </button>
         </div>
-        {this.state.expandDetail && <DetailExpander items={items} />}
+        {this.state.expandDetail && (
+          <DetailExpander items={items} discount={this.props.discount} />
+        )}
         <div>
           <button
             onClick={() =>

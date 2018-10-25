@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './stylesheets/PromotionExpander.css';
 
 export default class PromotionExpander extends Component {
   state = { promotionCode: '', correctDiscount: false };
@@ -22,18 +23,23 @@ export default class PromotionExpander extends Component {
   handleS;
   render() {
     return (
-      <div>
+      <div id="promo-section">
         <form onSubmit={this.handleSubmit}>
           <div>
-            <label htmlFor="promotionCode">Promotion Code</label>
+            <label id="promo-label" htmlFor="promotionCode">
+              Promo Code
+            </label>
           </div>
+
           <input
             name="promotionCode"
             type="text"
             value={this.state.promotionCode}
             onChange={this.handleChange}
           />
-          <button type="submit">Apply</button>
+          <button id="apply-button" type="submit">
+            Apply
+          </button>
         </form>
       </div>
     );

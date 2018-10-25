@@ -38,6 +38,7 @@ export default class Orders extends Component {
       <div>
         <form>
           <div>
+            <p>Choose items to calculate subtotal: </p>
             <label htmlFor="chair">Chair</label>
             <input
               category="item"
@@ -68,9 +69,8 @@ export default class Orders extends Component {
             />
           </div>
 
-          <hr />
-
           <div>
+            <p>Choose a zipcode to calculate shippings and tax: </p>
             <label htmlFor="zipCode">Zipcode</label>
             <div>
               <input
@@ -103,6 +103,7 @@ export default class Orders extends Component {
               94066
             </div>
             <div>
+              <p>Choose whether to pick up locally to save shippings: </p>
               <label htmlFor="pickUp">Pick up locally </label>
               <input
                 type="checkbox"
@@ -113,8 +114,6 @@ export default class Orders extends Component {
             </div>
           </div>
         </form>
-
-        <hr />
       </div>
     );
   }

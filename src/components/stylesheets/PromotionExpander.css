@@ -1,0 +1,22 @@
+#apply-button {
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-left: 5px;
+}
+
+#promo-label {
+  color: rgb(119, 114, 114);
+  font-size: 0.8rem;
+  margin-left: 5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  float: left;
+}
+
+#promo-text {
+  margin-left: 5px;
+}
+
+#promo-section {
+  margin-top: 10px;
+}

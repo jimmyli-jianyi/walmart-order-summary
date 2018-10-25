@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './DetailExpander.css';
+import './stylesheets/DetailExpander.css';
 
 export default class DetailExpander extends Component {
   render() {
@@ -10,9 +10,20 @@ export default class DetailExpander extends Component {
         </div>
         <div className="itemDescription">
           <span className="itemName">{item.itemName}</span>
-          <span className="itemPrice">
-            <b>${item.price}</b>
-          </span>
+          {this.props.discount > 0 ? (
+            <span>
+              <span className="super-bold">
+                ${item.price * (1 - this.props.discount)}
+              </span>
+              <div>
+                <strike style={{ color: 'grey' }} className="super-bold">
+                  ${item.price}
+                </strike>
+              </div>
+            </span>
+          ) : (
+            <span className="itemPrice super-bold">${item.price}</span>
+          )}
           <span className="itemColor">color: {item.color}</span>
         </div>
       </div>

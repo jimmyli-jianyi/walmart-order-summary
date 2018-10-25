@@ -42,7 +42,7 @@
   box-shadow: 15px #aaaaaa;
   border: 1px solid #bfbfbf;
   padding: 10px;
-  margin: auto;
+  margin: 50px auto;
 }
 
 hr {
@@ -51,6 +51,31 @@ hr {
 }
 
 button {
+  left: 0;
   border: none;
-  margin: 10px 0;
+  margin: 8px 0 5px 0;
+}
+
+.text-left {
+  margin-left: 0;
+  padding-left: 0;
+  left: 0;
+  text-align: left;
+}
+
+.text-right {
+  right: 0;
+  text-align: right;
+}
+
+.super-bold {
+  font-weight: 900;
+}
+
+.summary-text {
+  font-size: 0.85rem;
+}
+
+#saving {
+  color: Red;
 }
