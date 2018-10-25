@@ -1,6 +1,6 @@
 {
   "data": {
-    "chair": {
+    "chair1": {
       "id": 1,
       "itemName": "OFM Essentials Racecar-Style Leather",
       "price": 81.25,
@@ -8,21 +8,21 @@
       "color": "red",
       "img": "https://i5.walmartimages.com/asr/e73e1252-642c-4473-93ea-fd3b564a7027_1.3e81ea58fa3042452fe185129a4a865f.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF"
     },
-    "hat": {
+    "chair2": {
       "id": 2,
-      "itemName": "Rabadon's DeathHat",
-      "price": 3600,
-      "category": "Gaming Hat",
-      "color": "purple",
-      "img": "https://i5.walmartimages.com/asr/e73e1252-642c-4473-93ea-fd3b564a7027_1.3e81ea58fa3042452fe185129a4a865f.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF"
+      "itemName": "Mainstays Mesh Office Chair With Arms",
+      "price": 49.0,
+      "category": "Office Chair",
+      "color": "black",
+      "img": "https://i5.walmartimages.com/asr/2c7b5fef-0ba3-4c0b-ab77-88cafa08eaa8_1.745d223fbdb05b21368633855ff7c4f2.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF"
     },
-    "shoes": {
+    "chair3": {
       "id": 3,
-      "itemName": "Nike shoes",
-      "price": 100.0,
-      "category": "Sport shoes",
-      "color": "white",
-      "img": "https://i5.walmartimages.com/asr/e73e1252-642c-4473-93ea-fd3b564a7027_1.3e81ea58fa3042452fe185129a4a865f.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF"
+      "itemName": "DHI Frankfurt Upholstered Parsons Dining Chair",
+      "price": 61.61,
+      "category": "Home Chair",
+      "color": "flax",
+      "img": "https://i5.walmartimages.com/asr/150606b9-1c8b-47df-ae02-60166229e908_1.7a6d6c63d95f686483cfe205f48c453e.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF"
     }
   }
 }

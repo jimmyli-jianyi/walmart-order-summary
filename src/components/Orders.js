@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 export default class Orders extends Component {
   state = {
-    chair: false,
-    shoes: false,
-    hat: false,
+    chair1: false,
+    chair2: false,
+    chair3: false,
     zipcode: '',
     pickUp: false
   };
@@ -39,32 +39,32 @@ export default class Orders extends Component {
         <form>
           <div>
             <p>Choose items to calculate subtotal: </p>
-            <label htmlFor="chair">Chair</label>
+            <label htmlFor="chair1">Chair1</label>
             <input
               category="item"
               type="checkbox"
-              checked={this.state.chair}
-              name="chair"
+              checked={this.state.chair1}
+              name="chair1"
               onChange={this.handleCartChange}
             />
           </div>
           <div>
-            <label htmlFor="shoes">Shoes</label>
+            <label htmlFor="chair2">Chair2</label>
             <input
               category="item"
               type="checkbox"
-              name="shoes"
-              checked={this.state.shoes}
+              name="chair2"
+              checked={this.state.chair2}
               onChange={this.handleCartChange}
             />
           </div>
           <div>
-            <label htmlFor="hat">Hat</label>
+            <label htmlFor="chair3">Chair3</label>
             <input
               category="item"
               type="checkbox"
-              name="hat"
-              checked={this.state.hat}
+              name="chair3"
+              checked={this.state.chair3}
               onChange={this.handleCartChange}
             />
           </div>
