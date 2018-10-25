@@ -1,0 +1,28 @@
+{
+  "data": {
+    "chair": {
+      "id": 1,
+      "itemName": "OFM Essentials Racecar-Style Leather",
+      "price": 81.25,
+      "category": "Gaming Chair",
+      "color": "red",
+      "img": "https://i5.walmartimages.com/asr/e73e1252-642c-4473-93ea-fd3b564a7027_1.3e81ea58fa3042452fe185129a4a865f.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF"
+    },
+    "hat": {
+      "id": 2,
+      "itemName": "Rabadon's DeathHat",
+      "price": 3600,
+      "category": "Gaming Hat",
+      "color": "purple",
+      "img": "https://i5.walmartimages.com/asr/e73e1252-642c-4473-93ea-fd3b564a7027_1.3e81ea58fa3042452fe185129a4a865f.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF"
+    },
+    "shoes": {
+      "id": 3,
+      "itemName": "Nike shoes",
+      "price": 100.0,
+      "category": "Sport shoes",
+      "color": "white",
+      "img": "https://i5.walmartimages.com/asr/e73e1252-642c-4473-93ea-fd3b564a7027_1.3e81ea58fa3042452fe185129a4a865f.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF"
+    }
+  }
+}
