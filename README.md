@@ -13,4 +13,4 @@
 
 ### Example UI
 
-! [alt text](./demo.png)
+![Screenshot](./demo.png)
